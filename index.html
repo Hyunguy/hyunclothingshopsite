@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EVENTIDE — Considered Clothing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-left">
+        <a href="#" class="nav-link">Shop</a>
+        <a href="#" class="nav-link">Journal</a>
+        <a href="#" class="nav-link">About</a>
+      </div>
+      <a href="#" class="logo">MAISON</a>
+      <div class="header-right">
+        <a href="#" class="nav-link">Account</a>
+        <a href="#" class="nav-link">Bag (0)</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="hero-eyebrow">Spring / Summer 2026</p>
+    <h1 class="hero-title">The New Essentials</h1>
+    <p class="hero-sub">
+      A considered edit of pieces designed to be worn, washed, and worn again.
+    </p>
+  </section>
+
+  <!-- PRODUCTS -->
+  <main class="shop">
+    <div class="shop-bar">
+      <p class="shop-count">
+        Showing <span id="productCount">0</span> pieces
+      </p>
+      <div class="sort-wrap">
+        <label for="sort" class="sort-label">Sort by</label>
+        <select id="sort" class="sort-select">
+          <option value="featured">Featured</option>
+          <option value="az">Alphabetical: A–Z</option>
+          <option value="za">Alphabetical: Z–A</option>
+          <option value="newest">Newest to Oldest</option>
+          <option value="oldest">Oldest to Newest</option>
+          <option value="priceLow">Price: Low to High</option>
+          <option value="priceHigh">Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="productGrid" class="product-grid">
+      <!-- Products injected via JS -->
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4 class="footer-title">EVENTIDE</h4>
+        <p class="footer-text">
+          Clothing made in small batches from natural fibers, in workshops we
+          know by name.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-title">Shop</h4>
+        <ul class="footer-list">
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Archive Sale</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-title">Help</h4>
+        <ul class="footer-list">
+          <li><a href="#">Shipping & Returns</a></li>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">Care Instructions</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-title">Stay In Touch</h4>
+        <p class="footer-text">
+          Letters from the studio. Twice a month, never more.
+        </p>
+        <div class="newsletter">
+          <input type="email" placeholder="your@email.com" aria-label="Email" />
+          <button type="button">Join</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Eventide Studio. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Accessibility</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
