@@ -103,12 +103,42 @@ const products = [
 ];
 
 // Simple SVG placeholder so we don't depend on external images.
+// Filled t-shirt silhouette — gives the brand artwork a fabric surface
+// to sit on so it reads as a real garment print.
 function placeholderSVG() {
   return `
-    <svg viewBox="0 0 200 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <path d="M50 40 L80 20 L120 20 L150 40 L170 70 L150 90 L150 240 L50 240 L50 90 L30 70 Z"
-            fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linejoin="round"/>
-      <path d="M80 20 Q100 40 120 20" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+    <svg viewBox="0 0 240 280" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="fabric" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#f7f9f6"/>
+          <stop offset="100%" stop-color="#e6ebe8"/>
+        </linearGradient>
+      </defs>
+      <!-- T-shirt body + sleeves -->
+      <path d="M70 36
+               L96 26
+               Q120 44 144 26
+               L170 36
+               L215 64
+               L198 108
+               L172 96
+               L172 264
+               L68 264
+               L68 96
+               L42 108
+               L25 64 Z"
+            fill="url(#fabric)"
+            stroke="#9aa3a8"
+            stroke-width="1"
+            stroke-linejoin="round"/>
+      <!-- Collar shadow -->
+      <path d="M96 26 Q120 50 144 26"
+            fill="none"
+            stroke="#9aa3a8"
+            stroke-width="1.2"/>
+      <!-- Subtle fabric crease at the side seams -->
+      <path d="M68 110 L68 260" fill="none" stroke="#c8cfcb" stroke-width="0.6"/>
+      <path d="M172 110 L172 260" fill="none" stroke="#c8cfcb" stroke-width="0.6"/>
     </svg>
   `;
 }
