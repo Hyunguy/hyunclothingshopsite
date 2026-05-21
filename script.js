@@ -1,4 +1,6 @@
-
+/* ============================================
+   MAISON — Product catalog & sort filter
+   ============================================ */
 
 // Product data. `dateAdded` is an ISO date used for chronological sorting.
 const products = [
@@ -116,7 +118,7 @@ function formatPrice(value) {
   return `$${value.toLocaleString("en-US")}`;
 }
 
-// Render a single product card.
+// Render a single product card. Each garment carries the EVENTIDE brand logo.
 function renderCard(product) {
   const tagHTML = product.tag
     ? `<span class="product-tag">${product.tag}</span>`
@@ -126,6 +128,7 @@ function renderCard(product) {
       <div class="product-img">
         ${tagHTML}
         ${placeholderSVG()}
+        <img src="eventide-logo.webp" alt="EVENTIDE" class="product-brand" />
       </div>
       <h3 class="product-name">${product.name}</h3>
       <p class="product-meta">${product.category}</p>
