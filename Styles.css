@@ -396,7 +396,7 @@ button, input, select { font-family: inherit; }
   .logo-mark { width: 28px; height: 28px; }
 
   .shop { padding: 32px 20px 56px; }
-  .page-header { padding: 56px 0 40px; }
+  .page-header { padding: 72px 0 48px; }
   .page-header h1 { font-size: 40px; }
   .moon { width: 160px; height: 160px; }
 
@@ -464,7 +464,7 @@ button, input, select { font-family: inherit; }
   }
 
   .shop { padding: 24px 16px 48px; }
-  .page-header { padding: 40px 0 28px; margin-bottom: 12px; }
+  .page-header { padding: 72px 0 40px; margin-bottom: 12px; }
   .page-header h1 { font-size: 30px; }
   .moon { width: 120px; height: 120px; }
 
