@@ -3,80 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EVENTIDE — Considered Clothing</title>
+  <title>EVENTIDE</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Inter:wght@300;400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Inter:wght@400;500;600&display=swap"
     rel="stylesheet"
   />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- HEADER -->
   <header class="site-header">
     <div class="header-inner">
       <div class="header-left">
         <a href="#" class="nav-link">Shop</a>
-        <a href="#" class="nav-link">Journal</a>
-        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link nav-secondary">Journal</a>
+        <a href="#" class="nav-link nav-secondary">About</a>
       </div>
       <a href="#" class="logo">
         <img src="eventide-logo.webp" alt="" class="logo-mark" />
         <span>EVENTIDE</span>
       </a>
       <div class="header-right">
-        <a href="#" class="nav-link">Account</a>
+        <a href="#" class="nav-link nav-secondary">Account</a>
         <a href="#" class="nav-link">Bag (0)</a>
       </div>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="moon" aria-hidden="true"></div>
-    <p class="hero-eyebrow">Spring / Summer 2026</p>
-    <h1 class="hero-title">The New Essentials</h1>
-    <p class="hero-sub">
-      A exquisite edit of pieces designed for everyday use.
-    
-    </p>
-  </section>
-
-  <!-- PRODUCTS -->
   <main class="shop">
+    <div class="page-header">
+      <h1>Shop</h1>
+      <div class="moon" aria-hidden="true"></div>
+    </div>
+
     <div class="shop-bar">
       <p class="shop-count">
-        Showing <span id="productCount">0</span> pieces
+        <span id="productCount">0</span> items
       </p>
-      <div class="sort-wrap">
-        <label for="sort" class="sort-label">Sort by</label>
-        <select id="sort" class="sort-select">
-          <option value="featured">Featured</option>
-          <option value="az">Alphabetical: A–Z</option>
-          <option value="za">Alphabetical: Z–A</option>
-          <option value="newest">Newest to Oldest</option>
-          <option value="oldest">Oldest to Newest</option>
-          <option value="priceLow">Price: Low to High</option>
-          <option value="priceHigh">Price: High to Low</option>
-        </select>
+      <div class="shop-controls">
+        <div class="search-wrap">
+          <svg class="search-icon" viewBox="0 0 16 16" aria-hidden="true">
+            <circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="11" y1="11" x2="14" y2="14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <input
+            type="search"
+            id="search"
+            class="search-input"
+            placeholder="Search"
+            aria-label="Search products"
+            autocomplete="off"
+          />
+        </div>
+        <div class="sort-wrap">
+          <label for="sort" class="sort-label">Sort</label>
+          <select id="sort" class="sort-select">
+            <option value="featured">Featured</option>
+            <option value="az">Name: A–Z</option>
+            <option value="za">Name: Z–A</option>
+            <option value="newest">Newest</option>
+            <option value="oldest">Oldest</option>
+            <option value="priceLow">Price: Low to High</option>
+            <option value="priceHigh">Price: High to Low</option>
+          </select>
+        </div>
       </div>
     </div>
 
-    <div id="productGrid" class="product-grid">
-      <!-- Products injected via JS -->
-    </div>
+    <div id="productGrid" class="product-grid"></div>
   </main>
 
-  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="footer-grid">
       <div class="footer-col">
         <h4 class="footer-title">EVENTIDE</h4>
-        <p class="footer-text">
-          Clothing made in small batches from natural fibers, in workshops we
-          know by name.
-        </p>
+        <p class="footer-text">Considered clothing, made to last.</p>
       </div>
       <div class="footer-col">
         <h4 class="footer-title">Shop</h4>
@@ -84,7 +86,7 @@
           <li><a href="#">New Arrivals</a></li>
           <li><a href="#">Women</a></li>
           <li><a href="#">Men</a></li>
-          <li><a href="#">Archive Sale</a></li>
+          <li><a href="#">Sale</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -92,27 +94,23 @@
         <ul class="footer-list">
           <li><a href="#">Shipping & Returns</a></li>
           <li><a href="#">Size Guide</a></li>
-          <li><a href="#">Care Instructions</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4 class="footer-title">Stay In Touch</h4>
-        <p class="footer-text">
-          Letters from the studio. Twice a month, never more.
-        </p>
+        <h4 class="footer-title">Newsletter</h4>
+        <p class="footer-text">Updates on new arrivals.</p>
         <div class="newsletter">
-          <input type="email" placeholder="your@email.com" aria-label="Email" />
-          <button type="button">Join</button>
+          <input type="email" placeholder="Email address" aria-label="Email" />
+          <button type="button">Subscribe</button>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Eventide Studio. All rights reserved.</p>
+      <p>© 2026 Eventide</p>
       <div class="footer-legal">
         <a href="#">Privacy</a>
         <a href="#">Terms</a>
-        <a href="#">Accessibility</a>
       </div>
     </div>
   </footer>
