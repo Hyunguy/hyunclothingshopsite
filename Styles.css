@@ -428,12 +428,40 @@ button, input, select { font-family: inherit; }
 }
 
 @media (max-width: 480px) {
-  .nav-secondary { display: none; }
-  .header-inner { padding: 14px 16px; }
-  .header-left, .header-right { gap: 12px; }
-  .nav-link { font-size: 13px; }
-  .logo { font-size: 17px; gap: 8px; }
-  .logo-mark { width: 24px; height: 24px; }
+  .header-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "logo logo"
+      "left right";
+    align-items: center;
+    gap: 12px 8px;
+    padding: 14px 16px;
+  }
+  .logo {
+    grid-area: logo;
+    justify-self: center;
+    font-size: 18px;
+    gap: 8px;
+  }
+  .logo-mark {
+    width: 24px;
+    height: 24px;
+  }
+  .header-left {
+    grid-area: left;
+    justify-self: start;
+    gap: 14px;
+  }
+  .header-right {
+    grid-area: right;
+    justify-self: end;
+    gap: 14px;
+  }
+  .nav-link {
+    font-size: 12px;
+    padding: 4px 0;
+  }
 
   .shop { padding: 24px 16px 48px; }
   .page-header { padding: 40px 0 28px; margin-bottom: 12px; }
