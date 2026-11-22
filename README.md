@@ -1,55 +1,73 @@
-# EVENTIDE
+# EVENTIDE — clothing marketplace
 
-A React clothing storefront with a quiet, catalog-first layout: no hero, gradients, or artificial product badges.
+Deployment: https://hyunguy.github.io/hyunclothingshopsite/
 
-## Development
-- Node 22 or later
+A React clothing adaptation of the FES Virtual Internship. The user explicitly chose to retain clothing instead of the supplied NFT marketplace, and requested a plain shop layout with no hero or gradients.
+
+## Run locally
+Node 22 or later:
 - npm ci
 - npm run dev
 - npm test
 - npm run build
 
-Vite serves the app at /hyunclothingshopsite/. The same base path is used on GitHub Pages.
+The app lives at /hyunclothingshopsite/. Hash routes let seller and item links survive refresh on GitHub Pages.
 
-## Component structure
-- src/main.jsx: App owns category, search, sort, saved-filter and dialog state; composes navigation, catalog, editorial content and footer.
-- src/components.jsx: ProductCard, ProductImage, ProductDetail, Modal and Bag.
-- src/hooks.js: catalog request lifecycle and local browser persistence.
-- src/catalog.js: API adapter, pure filtering/sorting and stock-limited bag operations.
-- src/styles.css: responsive catalog, typography, product presentation and dialogs.
+## Lesson requirements and implementation
+
+All nine lesson audio tracks were transcribed locally and reviewed, alongside the course pages, starter source, and reference website. The transcripts are working material and are not published in this repository.
+
+| Lesson | Behavior | Implementation |
+| --- | --- | --- |
+| Introduction | React, API data, reusable components, routing, version control | React 19, Axios, React Router, shared cards, feature branch and PR |
+| Environment Setup | Separate branch, descriptive PR, update from main, retain branch | Existing Hyun repository retained by request; adaptation branch retained |
+| Hot Collections | Six dynamic collections, 4/3/2/1 responsive carousel, move one, loop, skeletons, dynamic links | Collections resource, React Slick carousel, seller/item/collection routes |
+| New Items | Seven records, same carousel, prices/likes, reusable timestamp countdown, skeletons | New arrivals resource, ItemCard and Countdown |
+| Top Sellers | Twelve records, seller image/name/sales, profile links, skeletons | TopSellers with twelve fetched demo seller profiles |
+| Explore Items | Eight first, four per Load more, price ascending/descending and most liked, fetch sorted results | Explore fetches distinct ordered JSON resources; displays slices of 8, 12, 16, etc. |
+| Author | Route ID fetch, profile metadata, own items, follow +1/unfollow, skeletons | /author/:id, seller handle in place of wallet, client-only follow state |
+| Item Details | Route ID fetch, title/image/description/price/views/likes, seller and creator links, skeletons | /item-details/:id with gallery and bag |
+| Animations | AOS scroll animations; integrate current main before merging; deploy | Subtle AOS fade, reduced-motion support, GitHub Pages |
+
+React Slick was chosen over Owl Carousel and Swiper because the lesson suggests Slick as one option and it directly supports a looping, one-slide step with responsive visible counts, without a jQuery dependency.
+
+## Important adaptations for the reviewer
+This is a clothing adaptation, not a pixel-for-pixel submission of the NFT starter. Acceptance for a FES certificate has not been verified with a mentor.
+- Clothing, USD prices and seller handles replace NFTs, ETH and wallet addresses.
+- The pre-existing Hyun repository is used rather than a fresh fork of the supplied starter.
+- No hero, gradients or marketing filler, as requested.
+- GitHub Pages is static hosting. Axios fetches versioned JSON responses under public/api. The generator prepares each sorted response ahead of deployment; changing the sort requests a new response and does not sort items in the browser. This is NOT a live query-processing backend or the FES API.
+- Product data and images originate from DummyJSON. Seller identities, seller/creator assignments, likes, views, follower/sales counts and listing deadlines are explicitly sample fixtures added for this exercise.
+- Thirty clothing items replace the reference's sixteen NFTs; pagination remains 8 initially and +4.
+- Bag and saved items persist locally. Following stays in page state as the Author lesson demonstrates. No orders, payments or bids are submitted.
+- Implementation is consolidated into a reviewable feature PR; it does not recreate one historical PR per lesson or simulate team conflicts.
 
 ## Data flow
-DummyJSON category endpoints -> loadCatalog -> useCatalog -> App -> filterProducts -> ProductCard.
-Product selection -> ProductDetail -> changeBag -> React bag state -> localStorage -> Bag and header count.
-Save button -> saved product IDs -> localStorage -> saved filter and heart state.
-Search, sort, category and stock filters are derived locally from the fetched collection, so combined filters do not cause conflicting network requests.
+scripts/build-catalog.mjs fetches six DummyJSON categories with Axios, validates them, and writes the versioned responses. Run npm run catalog explicitly to refresh the snapshot; ordinary builds are reproducible and do not depend on a live API.
 
-## API investigation
-Verified 2026-09-17:
-- GET /products/category/mens-shirts returns 5 products.
-- GET /products/category/womens-dresses returns 5 products.
-- GET /products/category/tops returns 5 products.
-- Responses contain products, total, skip and limit.
-- Exact decimal prices, stock, descriptions, images, shippingInformation, returnPolicy and SKU are retained.
-- meta.createdAt exists and is used for newest sorting. The original synthetic dateAdded values were removed.
-- limit=0 requests all products within each category.
-- Promise.allSettled preserves available categories when another fails; malformed payloads and HTTP failures become retryable states. Requests time out after 15 seconds and are aborted on unmount.
-- No size variants are provided, so the interface does not invent them.
-- minimumOrderQuantity appears in this sample API, but this retail demo deliberately allows single units. No order is sent.
-- Bag and saved items are local to this browser; there is no account, payment service, newsletter service or order backend.
-- Product images and Google Fonts remain external network dependencies. Images have an unavailable state.
-- Source documentation: https://dummyjson.com/docs/products
+Browser route -> useResource(resource) -> Axios GET -> payload validation -> loading/error/data state -> page -> shared ItemCard / SellerLink / Countdown.
 
-## Interactions
-Category navigation, combined search/filter/sort, empty results, retry, image gallery, saved items, local persistent bag, quantity limits, remove items, bag review, story/journal/help/privacy dialogs and clear-local-data control.
+Explore sort -> different ordered response -> search/category/stock filtering (preserves order) -> slice 8 + 4 per click.
 
-Native dialog provides modal focus containment and Escape dismissal. Buttons and inputs have labels and focus styles. Reduced-motion preferences are honored.
+Product and seller IDs determine the response path. Each item record's seller and creator resolve back to the correct profile and inventory. Requests time out after 15 seconds, abort on unmount/route changes, and expose retry controls. Stale responses cannot replace a newer route.
+
+## Components
+- src/App.jsx: app shell, hash routes, saved/bag state, informational dialogs.
+- src/pages/Home.jsx: Collections, NewItems and TopSellers.
+- src/pages/Explore.jsx: query controls and pagination.
+- src/pages/Author.jsx: seller profile, follow state and inventory tabs.
+- src/pages/ItemDetails.jsx: item view and seller/creator links.
+- src/ui/MarketplaceUI.jsx: shared ItemCard, Countdown, Carousel, SellerLink, Skeletons and failure/empty states.
+- src/components.jsx: image fallback, gallery/detail view, native dialog and bag.
+- src/useResource.js and src/marketplace.js: request lifecycle, response validation and filter helpers.
+- src/hooks.js and src/catalog.js: safe local persistence, currency formatting and stock-limited bag operations.
 
 ## Verification
-npm test covers compound filters, non-mutating sorting, stock limits, item removal, partial API failure, malformed responses and complete API failure.
-Production build verified locally. Browser QA covers search, detail view, saving, bag addition, quantity/subtotal, demo review and responsive presentation.
+Unit tests verify countdown boundaries, stock limits, removal, remote sort order, record uniqueness, every item/seller/creator relationship, composed search filters and malformed-response rejection.
+Browser checks cover desktop/mobile layout, carousel movement, pagination, sorting, search, item links, seller follow/unfollow and direct-route refresh.
+The Actions workflow runs tests and a production build before publishing.
 
-## Deployment
-.github/workflows/deploy.yml builds and tests main, uploads dist and deploys to GitHub Pages.
-Pages source must be GitHub Actions.
-Deployment URL: https://hyunguy.github.io/hyunclothingshopsite/
+## Known demo boundaries
+No authentication, payment provider, real inventory reservation, live seller activity or size variants.
+The fixed sample listing deadlines are in December 2026. They expire normally and never reset on refresh.
+Product images remain an external dependency and use an unavailable-image fallback.

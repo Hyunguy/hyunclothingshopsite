@@ -1,1 +1,26 @@
-{"name":"eventide","private":true,"version":"1.0.0","type":"module","scripts":{"dev":"vite --host 0.0.0.0","build":"vite build","test":"node --test src/catalog.test.js"},"dependencies":{"react":"^19.1.0","react-dom":"^19.1.0","lucide-react":"^0.468.0"},"devDependencies":{"vite":"^7.0.0","@vitejs/plugin-react":"^4.5.0"}}
+{
+  "name": "eventide",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "test": "node --test src/*.test.js",
+    "catalog": "node scripts/build-catalog.mjs"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "axios": "^1.20.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.18.4",
+    "react-slick": "^0.31.0",
+    "slick-carousel": "^2.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.5.0",
+    "vite": "^7.0.0"
+  }
+}
