@@ -1,0 +1,435 @@
+{
+  "id": 3,
+  "name": "Sunday Studio",
+  "handle": "sunday-studio",
+  "followers": 375,
+  "sales": 3980,
+  "description": "A sample seller profile in the Eventide clothing marketplace.",
+  "image": "https://cdn.dummyjson.com/product-images/tops/blue-frock/thumbnail.webp",
+  "items": [
+    {
+      "id": 162,
+      "title": "Blue Frock",
+      "description": "The Blue Frock is a charming and stylish dress for various occasions. With a vibrant blue color and a comfortable design, it adds a touch of elegance to your wardrobe.",
+      "category": "tops",
+      "price": 29.99,
+      "discountPercentage": 12.13,
+      "rating": 4.17,
+      "stock": 52,
+      "tags": [
+        "clothing",
+        "dresses"
+      ],
+      "sku": "TOP-BRD-BLU-162",
+      "weight": 5,
+      "dimensions": {
+        "width": 24.25,
+        "height": 5.91,
+        "depth": 8.79
+      },
+      "warrantyInformation": "Lifetime warranty",
+      "shippingInformation": "Ships in 2 weeks",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4,
+          "comment": "Great product!",
+          "date": "2025-04-30T09:41:02.054Z",
+          "reviewerName": "Victoria McDonald",
+          "reviewerEmail": "victoria.mcdonald@x.dummyjson.com"
+        },
+        {
+          "rating": 4,
+          "comment": "Fast shipping!",
+          "date": "2025-04-30T09:41:02.054Z",
+          "reviewerName": "Benjamin Foster",
+          "reviewerEmail": "benjamin.foster@x.dummyjson.com"
+        },
+        {
+          "rating": 4,
+          "comment": "Would buy again!",
+          "date": "2025-04-30T09:41:02.054Z",
+          "reviewerName": "Addison Ward",
+          "reviewerEmail": "addison.ward@x.dummyjson.com"
+        }
+      ],
+      "returnPolicy": "60 days return policy",
+      "minimumOrderQuantity": 4,
+      "meta": {
+        "createdAt": "2024-09-17T10:20:54.331Z",
+        "updatedAt": "2026-03-28T17:32:01.176Z",
+        "barcode": "6410441827139",
+        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://cdn.dummyjson.com/product-images/tops/blue-frock/1.webp",
+        "https://cdn.dummyjson.com/product-images/tops/blue-frock/2.webp",
+        "https://cdn.dummyjson.com/product-images/tops/blue-frock/3.webp",
+        "https://cdn.dummyjson.com/product-images/tops/blue-frock/4.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/tops/blue-frock/thumbnail.webp",
+      "categoryName": "Tops",
+      "seller": {
+        "id": 3,
+        "name": "Sunday Studio",
+        "handle": "sunday-studio",
+        "followers": 375,
+        "sales": 3980,
+        "description": "A sample seller profile in the Eventide clothing marketplace.",
+        "image": "https://cdn.dummyjson.com/product-images/tops/blue-frock/thumbnail.webp"
+      },
+      "creator": {
+        "id": 7,
+        "name": "Studio Eight",
+        "handle": "studio-eight",
+        "followers": 219,
+        "sales": 2435,
+        "description": "A sample seller profile in the Eventide clothing marketplace.",
+        "image": "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/thumbnail.webp"
+      },
+      "likes": 17,
+      "views": 194,
+      "expiresAt": null
+    },
+    {
+      "id": 164,
+      "title": "Gray Dress",
+      "description": "The Gray Dress is a versatile and chic option for various occasions. With a neutral gray color, it can be dressed up or down, making it a wardrobe staple for any fashion-forward individual.",
+      "category": "tops",
+      "price": 34.99,
+      "discountPercentage": 14.28,
+      "rating": 2.72,
+      "stock": 55,
+      "tags": [
+        "clothing",
+        "dresses"
+      ],
+      "sku": "TOP-BRD-GRA-164",
+      "weight": 1,
+      "dimensions": {
+        "width": 11.91,
+        "height": 25.72,
+        "depth": 18.55
+      },
+      "warrantyInformation": "1 month warranty",
+      "shippingInformation": "Ships in 1 month",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Highly impressed!",
+          "date": "2025-04-30T09:41:02.054Z",
+          "reviewerName": "Brayden Fleming",
+          "reviewerEmail": "brayden.fleming@x.dummyjson.com"
+        },
+        {
+          "rating": 4,
+          "comment": "Awesome product!",
+          "date": "2025-04-30T09:41:02.054Z",
+          "reviewerName": "Michael Johnson",
+          "reviewerEmail": "michael.johnson@x.dummyjson.com"
+        },
+        {
+          "rating": 5,
+          "comment": "Highly recommended!",
+          "date": "2025-04-30T09:41:02.054Z",
+          "reviewerName": "Evelyn Sanchez",
+          "reviewerEmail": "evelyn.sanchez@x.dummyjson.com"
+        }
+      ],
+      "returnPolicy": "90 days return policy",
+      "minimumOrderQuantity": 13,
+      "meta": {
+        "createdAt": "2026-02-19T17:46:57.073Z",
+        "updatedAt": "2026-02-28T07:15:35.255Z",
+        "barcode": "5201099489825",
+        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://cdn.dummyjson.com/product-images/tops/gray-dress/1.webp",
+        "https://cdn.dummyjson.com/product-images/tops/gray-dress/2.webp",
+        "https://cdn.dummyjson.com/product-images/tops/gray-dress/3.webp",
+        "https://cdn.dummyjson.com/product-images/tops/gray-dress/4.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/tops/gray-dress/thumbnail.webp",
+      "categoryName": "Tops",
+      "seller": {
+        "id": 3,
+        "name": "Sunday Studio",
+        "handle": "sunday-studio",
+        "followers": 375,
+        "sales": 3980,
+        "description": "A sample seller profile in the Eventide clothing marketplace.",
+        "image": "https://cdn.dummyjson.com/product-images/tops/blue-frock/thumbnail.webp"
+      },
+      "creator": {
+        "id": 7,
+        "name": "Studio Eight",
+        "handle": "studio-eight",
+        "followers": 219,
+        "sales": 2435,
+        "description": "A sample seller profile in the Eventide clothing marketplace.",
+        "image": "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/thumbnail.webp"
+      },
+      "likes": 17,
+      "views": 638,
+      "expiresAt": null
+    },
+    {
+      "id": 166,
+      "title": "Tartan Dress",
+      "description": "The Tartan Dress features a classic tartan pattern, bringing a timeless and sophisticated touch to your wardrobe. Perfect for fall and winter, it adds a hint of traditional charm.",
+      "category": "tops",
+      "price": 39.99,
+      "discountPercentage": 12.95,
+      "rating": 4.05,
+      "stock": 73,
+      "tags": [
+        "clothing",
+        "dresses"
+      ],
+      "sku": "TOP-BRD-TAR-166",
+      "weight": 8,
+      "dimensions": {
+        "width": 23.14,
+        "height": 12.44,
+        "depth": 12.67
+      },
+      "warrantyInformation": "1 month warranty",
+      "shippingInformation": "Ships overnight",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Highly recommended!",
+          "date": "2025-04-30T09:41:02.054Z",
+          "reviewerName": "Mason Pearson",
+          "reviewerEmail": "mason.pearson@x.dummyjson.com"
+        },
+        {
+          "rating": 3,
+          "comment": "Not as described!",
+          "date": "2025-04-30T09:41:02.054Z",
+          "reviewerName": "Luke Cooper",
+          "reviewerEmail": "luke.cooper@x.dummyjson.com"
+        },
+        {
+          "rating": 4,
+          "comment": "Excellent quality!",
+          "date": "2025-04-30T09:41:02.054Z",
+          "reviewerName": "William Lopez",
+          "reviewerEmail": "william.lopez@x.dummyjson.com"
+        }
+      ],
+      "returnPolicy": "No return policy",
+      "minimumOrderQuantity": 1,
+      "meta": {
+        "createdAt": "2024-09-08T05:01:39.851Z",
+        "updatedAt": "2025-04-22T11:26:24.192Z",
+        "barcode": "3383823083995",
+        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://cdn.dummyjson.com/product-images/tops/tartan-dress/1.webp",
+        "https://cdn.dummyjson.com/product-images/tops/tartan-dress/2.webp",
+        "https://cdn.dummyjson.com/product-images/tops/tartan-dress/3.webp",
+        "https://cdn.dummyjson.com/product-images/tops/tartan-dress/4.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/tops/tartan-dress/thumbnail.webp",
+      "categoryName": "Tops",
+      "seller": {
+        "id": 3,
+        "name": "Sunday Studio",
+        "handle": "sunday-studio",
+        "followers": 375,
+        "sales": 3980,
+        "description": "A sample seller profile in the Eventide clothing marketplace.",
+        "image": "https://cdn.dummyjson.com/product-images/tops/blue-frock/thumbnail.webp"
+      },
+      "creator": {
+        "id": 7,
+        "name": "Studio Eight",
+        "handle": "studio-eight",
+        "followers": 219,
+        "sales": 2435,
+        "description": "A sample seller profile in the Eventide clothing marketplace.",
+        "image": "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/thumbnail.webp"
+      },
+      "likes": 17,
+      "views": 1082,
+      "expiresAt": null
+    }
+  ],
+  "createdItems": [
+    {
+      "id": 186,
+      "title": "Calvin Klein Heel Shoes",
+      "description": "Calvin Klein Heel Shoes are elegant and sophisticated, designed for formal occasions. With a classic design and high-quality materials, they complement your stylish ensemble.",
+      "category": "womens-shoes",
+      "price": 79.99,
+      "discountPercentage": 3.19,
+      "rating": 4.92,
+      "stock": 93,
+      "tags": [
+        "footwear",
+        "heel shoes"
+      ],
+      "brand": "Calvin Klein",
+      "sku": "WOM-CAL-CAL-186",
+      "weight": 6,
+      "dimensions": {
+        "width": 29.12,
+        "height": 20.94,
+        "depth": 20.65
+      },
+      "warrantyInformation": "2 year warranty",
+      "shippingInformation": "Ships in 1 week",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Great value for money!",
+          "date": "2025-04-30T09:41:02.054Z",
+          "reviewerName": "Maya Reed",
+          "reviewerEmail": "maya.reed@x.dummyjson.com"
+        },
+        {
+          "rating": 5,
+          "comment": "Great value for money!",
+          "date": "2025-04-30T09:41:02.054Z",
+          "reviewerName": "Grace Perry",
+          "reviewerEmail": "grace.perry@x.dummyjson.com"
+        },
+        {
+          "rating": 1,
+          "comment": "Not as described!",
+          "date": "2025-04-30T09:41:02.054Z",
+          "reviewerName": "Eleanor Collins",
+          "reviewerEmail": "eleanor.collins@x.dummyjson.com"
+        }
+      ],
+      "returnPolicy": "60 days return policy",
+      "minimumOrderQuantity": 6,
+      "meta": {
+        "createdAt": "2025-08-02T12:01:09.106Z",
+        "updatedAt": "2025-12-23T21:44:55.396Z",
+        "barcode": "0196443645959",
+        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/1.webp",
+        "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/2.webp",
+        "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/3.webp",
+        "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/4.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/thumbnail.webp",
+      "categoryName": "Women’s shoes",
+      "seller": {
+        "id": 11,
+        "name": "Neighbourhood",
+        "handle": "neighbourhood",
+        "followers": 96,
+        "sales": 1195,
+        "description": "A sample seller profile in the Eventide clothing marketplace.",
+        "image": "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/thumbnail.webp"
+      },
+      "creator": {
+        "id": 3,
+        "name": "Sunday Studio",
+        "handle": "sunday-studio",
+        "followers": 375,
+        "sales": 3980,
+        "description": "A sample seller profile in the Eventide clothing marketplace.",
+        "image": "https://cdn.dummyjson.com/product-images/tops/blue-frock/thumbnail.webp"
+      },
+      "likes": 81,
+      "views": 490,
+      "expiresAt": null
+    },
+    {
+      "id": 188,
+      "title": "Pampi Shoes",
+      "description": "Pampi Shoes offer a blend of comfort and style for everyday use. With a versatile design, they are suitable for various casual occasions, providing a trendy and relaxed look.",
+      "category": "womens-shoes",
+      "price": 29.99,
+      "discountPercentage": 14.14,
+      "rating": 3.05,
+      "stock": 49,
+      "tags": [
+        "footwear",
+        "casual shoes"
+      ],
+      "brand": "Pampi",
+      "sku": "WOM-PAM-PAM-188",
+      "weight": 7,
+      "dimensions": {
+        "width": 29.43,
+        "height": 22.65,
+        "depth": 16.12
+      },
+      "warrantyInformation": "No warranty",
+      "shippingInformation": "Ships in 1 week",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4,
+          "comment": "Highly recommended!",
+          "date": "2025-04-30T09:41:02.054Z",
+          "reviewerName": "Nathan Reed",
+          "reviewerEmail": "nathan.reed@x.dummyjson.com"
+        },
+        {
+          "rating": 4,
+          "comment": "Would buy again!",
+          "date": "2025-04-30T09:41:02.054Z",
+          "reviewerName": "Connor Baker",
+          "reviewerEmail": "connor.baker@x.dummyjson.com"
+        },
+        {
+          "rating": 5,
+          "comment": "Awesome product!",
+          "date": "2025-04-30T09:41:02.054Z",
+          "reviewerName": "Noah Lewis",
+          "reviewerEmail": "noah.lewis@x.dummyjson.com"
+        }
+      ],
+      "returnPolicy": "60 days return policy",
+      "minimumOrderQuantity": 12,
+      "meta": {
+        "createdAt": "2025-04-18T09:10:38.664Z",
+        "updatedAt": "2026-01-23T04:16:33.830Z",
+        "barcode": "9686058230535",
+        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://cdn.dummyjson.com/product-images/womens-shoes/pampi-shoes/1.webp",
+        "https://cdn.dummyjson.com/product-images/womens-shoes/pampi-shoes/2.webp",
+        "https://cdn.dummyjson.com/product-images/womens-shoes/pampi-shoes/3.webp",
+        "https://cdn.dummyjson.com/product-images/womens-shoes/pampi-shoes/4.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/womens-shoes/pampi-shoes/thumbnail.webp",
+      "categoryName": "Women’s shoes",
+      "seller": {
+        "id": 11,
+        "name": "Neighbourhood",
+        "handle": "neighbourhood",
+        "followers": 96,
+        "sales": 1195,
+        "description": "A sample seller profile in the Eventide clothing marketplace.",
+        "image": "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/thumbnail.webp"
+      },
+      "creator": {
+        "id": 3,
+        "name": "Sunday Studio",
+        "handle": "sunday-studio",
+        "followers": 375,
+        "sales": 3980,
+        "description": "A sample seller profile in the Eventide clothing marketplace.",
+        "image": "https://cdn.dummyjson.com/product-images/tops/blue-frock/thumbnail.webp"
+      },
+      "likes": 81,
+      "views": 934,
+      "expiresAt": null
+    }
+  ]
+}

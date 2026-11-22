@@ -1,0 +1,435 @@
+{
+  "id": 7,
+  "name": "Studio Eight",
+  "handle": "studio-eight",
+  "followers": 219,
+  "sales": 2435,
+  "description": "A sample seller profile in the Eventide clothing marketplace.",
+  "image": "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/thumbnail.webp",
+  "items": [
+    {
+      "id": 84,
+      "title": "Gigabyte Aorus Men Tshirt",
+      "description": "The Gigabyte Aorus Men Tshirt is a cool and casual shirt for gaming enthusiasts. With the Aorus logo and sleek design, it's perfect for expressing your gaming style.",
+      "category": "mens-shirts",
+      "price": 24.99,
+      "discountPercentage": 0.94,
+      "rating": 3.18,
+      "stock": 90,
+      "tags": [
+        "clothing",
+        "men's t-shirts"
+      ],
+      "brand": "Gigabyte",
+      "sku": "MEN-GIG-GIG-084",
+      "weight": 4,
+      "dimensions": {
+        "width": 22.31,
+        "height": 26.47,
+        "depth": 13.27
+      },
+      "warrantyInformation": "3 year warranty",
+      "shippingInformation": "Ships overnight",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Excellent quality!",
+          "date": "2025-04-30T09:41:02.053Z",
+          "reviewerName": "Amelia Perez",
+          "reviewerEmail": "amelia.perez@x.dummyjson.com"
+        },
+        {
+          "rating": 5,
+          "comment": "Awesome product!",
+          "date": "2025-04-30T09:41:02.053Z",
+          "reviewerName": "Tyler Davis",
+          "reviewerEmail": "tyler.davis@x.dummyjson.com"
+        },
+        {
+          "rating": 1,
+          "comment": "Disappointing product!",
+          "date": "2025-04-30T09:41:02.053Z",
+          "reviewerName": "Harper King",
+          "reviewerEmail": "harper.king@x.dummyjson.com"
+        }
+      ],
+      "returnPolicy": "30 days return policy",
+      "minimumOrderQuantity": 16,
+      "meta": {
+        "createdAt": "2025-02-03T01:53:33.526Z",
+        "updatedAt": "2026-06-12T06:38:46.762Z",
+        "barcode": "1654388837068",
+        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/1.webp",
+        "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/2.webp",
+        "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/3.webp",
+        "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/4.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/thumbnail.webp",
+      "categoryName": "Men’s shirts",
+      "seller": {
+        "id": 7,
+        "name": "Studio Eight",
+        "handle": "studio-eight",
+        "followers": 219,
+        "sales": 2435,
+        "description": "A sample seller profile in the Eventide clothing marketplace.",
+        "image": "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/thumbnail.webp"
+      },
+      "creator": {
+        "id": 11,
+        "name": "Neighbourhood",
+        "handle": "neighbourhood",
+        "followers": 96,
+        "sales": 1195,
+        "description": "A sample seller profile in the Eventide clothing marketplace.",
+        "image": "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/thumbnail.webp"
+      },
+      "likes": 42,
+      "views": 342,
+      "expiresAt": 1797386400000
+    },
+    {
+      "id": 86,
+      "title": "Man Short Sleeve Shirt",
+      "description": "The Man Short Sleeve Shirt is a breezy and stylish option for warm days. With a comfortable fit and short sleeves, it's perfect for a laid-back yet polished look.",
+      "category": "mens-shirts",
+      "price": 19.99,
+      "discountPercentage": 6.83,
+      "rating": 2.9,
+      "stock": 2,
+      "tags": [
+        "clothing",
+        "men's shirts"
+      ],
+      "brand": "Casual Comfort",
+      "sku": "MEN-CAS-SHO-086",
+      "weight": 2,
+      "dimensions": {
+        "width": 5.02,
+        "height": 16.57,
+        "depth": 9.6
+      },
+      "warrantyInformation": "3 year warranty",
+      "shippingInformation": "Ships in 2 weeks",
+      "availabilityStatus": "Low Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Highly recommended!",
+          "date": "2025-04-30T09:41:02.053Z",
+          "reviewerName": "Charlotte Lopez",
+          "reviewerEmail": "charlotte.lopez@x.dummyjson.com"
+        },
+        {
+          "rating": 2,
+          "comment": "Poor quality!",
+          "date": "2025-04-30T09:41:02.053Z",
+          "reviewerName": "Ellie Stewart",
+          "reviewerEmail": "ellie.stewart@x.dummyjson.com"
+        },
+        {
+          "rating": 1,
+          "comment": "Would not recommend!",
+          "date": "2025-04-30T09:41:02.053Z",
+          "reviewerName": "Sadie Morales",
+          "reviewerEmail": "sadie.morales@x.dummyjson.com"
+        }
+      ],
+      "returnPolicy": "30 days return policy",
+      "minimumOrderQuantity": 4,
+      "meta": {
+        "createdAt": "2025-09-18T04:56:35.819Z",
+        "updatedAt": "2025-12-16T17:45:09.379Z",
+        "barcode": "9995865660204",
+        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/1.webp",
+        "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/2.webp",
+        "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/3.webp",
+        "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/4.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/thumbnail.webp",
+      "categoryName": "Men’s shirts",
+      "seller": {
+        "id": 7,
+        "name": "Studio Eight",
+        "handle": "studio-eight",
+        "followers": 219,
+        "sales": 2435,
+        "description": "A sample seller profile in the Eventide clothing marketplace.",
+        "image": "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/thumbnail.webp"
+      },
+      "creator": {
+        "id": 11,
+        "name": "Neighbourhood",
+        "handle": "neighbourhood",
+        "followers": 96,
+        "sales": 1195,
+        "description": "A sample seller profile in the Eventide clothing marketplace.",
+        "image": "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/thumbnail.webp"
+      },
+      "likes": 42,
+      "views": 786,
+      "expiresAt": 1797429600000
+    }
+  ],
+  "createdItems": [
+    {
+      "id": 162,
+      "title": "Blue Frock",
+      "description": "The Blue Frock is a charming and stylish dress for various occasions. With a vibrant blue color and a comfortable design, it adds a touch of elegance to your wardrobe.",
+      "category": "tops",
+      "price": 29.99,
+      "discountPercentage": 12.13,
+      "rating": 4.17,
+      "stock": 52,
+      "tags": [
+        "clothing",
+        "dresses"
+      ],
+      "sku": "TOP-BRD-BLU-162",
+      "weight": 5,
+      "dimensions": {
+        "width": 24.25,
+        "height": 5.91,
+        "depth": 8.79
+      },
+      "warrantyInformation": "Lifetime warranty",
+      "shippingInformation": "Ships in 2 weeks",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4,
+          "comment": "Great product!",
+          "date": "2025-04-30T09:41:02.054Z",
+          "reviewerName": "Victoria McDonald",
+          "reviewerEmail": "victoria.mcdonald@x.dummyjson.com"
+        },
+        {
+          "rating": 4,
+          "comment": "Fast shipping!",
+          "date": "2025-04-30T09:41:02.054Z",
+          "reviewerName": "Benjamin Foster",
+          "reviewerEmail": "benjamin.foster@x.dummyjson.com"
+        },
+        {
+          "rating": 4,
+          "comment": "Would buy again!",
+          "date": "2025-04-30T09:41:02.054Z",
+          "reviewerName": "Addison Ward",
+          "reviewerEmail": "addison.ward@x.dummyjson.com"
+        }
+      ],
+      "returnPolicy": "60 days return policy",
+      "minimumOrderQuantity": 4,
+      "meta": {
+        "createdAt": "2024-09-17T10:20:54.331Z",
+        "updatedAt": "2026-03-28T17:32:01.176Z",
+        "barcode": "6410441827139",
+        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://cdn.dummyjson.com/product-images/tops/blue-frock/1.webp",
+        "https://cdn.dummyjson.com/product-images/tops/blue-frock/2.webp",
+        "https://cdn.dummyjson.com/product-images/tops/blue-frock/3.webp",
+        "https://cdn.dummyjson.com/product-images/tops/blue-frock/4.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/tops/blue-frock/thumbnail.webp",
+      "categoryName": "Tops",
+      "seller": {
+        "id": 3,
+        "name": "Sunday Studio",
+        "handle": "sunday-studio",
+        "followers": 375,
+        "sales": 3980,
+        "description": "A sample seller profile in the Eventide clothing marketplace.",
+        "image": "https://cdn.dummyjson.com/product-images/tops/blue-frock/thumbnail.webp"
+      },
+      "creator": {
+        "id": 7,
+        "name": "Studio Eight",
+        "handle": "studio-eight",
+        "followers": 219,
+        "sales": 2435,
+        "description": "A sample seller profile in the Eventide clothing marketplace.",
+        "image": "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/thumbnail.webp"
+      },
+      "likes": 17,
+      "views": 194,
+      "expiresAt": null
+    },
+    {
+      "id": 164,
+      "title": "Gray Dress",
+      "description": "The Gray Dress is a versatile and chic option for various occasions. With a neutral gray color, it can be dressed up or down, making it a wardrobe staple for any fashion-forward individual.",
+      "category": "tops",
+      "price": 34.99,
+      "discountPercentage": 14.28,
+      "rating": 2.72,
+      "stock": 55,
+      "tags": [
+        "clothing",
+        "dresses"
+      ],
+      "sku": "TOP-BRD-GRA-164",
+      "weight": 1,
+      "dimensions": {
+        "width": 11.91,
+        "height": 25.72,
+        "depth": 18.55
+      },
+      "warrantyInformation": "1 month warranty",
+      "shippingInformation": "Ships in 1 month",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Highly impressed!",
+          "date": "2025-04-30T09:41:02.054Z",
+          "reviewerName": "Brayden Fleming",
+          "reviewerEmail": "brayden.fleming@x.dummyjson.com"
+        },
+        {
+          "rating": 4,
+          "comment": "Awesome product!",
+          "date": "2025-04-30T09:41:02.054Z",
+          "reviewerName": "Michael Johnson",
+          "reviewerEmail": "michael.johnson@x.dummyjson.com"
+        },
+        {
+          "rating": 5,
+          "comment": "Highly recommended!",
+          "date": "2025-04-30T09:41:02.054Z",
+          "reviewerName": "Evelyn Sanchez",
+          "reviewerEmail": "evelyn.sanchez@x.dummyjson.com"
+        }
+      ],
+      "returnPolicy": "90 days return policy",
+      "minimumOrderQuantity": 13,
+      "meta": {
+        "createdAt": "2026-02-19T17:46:57.073Z",
+        "updatedAt": "2026-02-28T07:15:35.255Z",
+        "barcode": "5201099489825",
+        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://cdn.dummyjson.com/product-images/tops/gray-dress/1.webp",
+        "https://cdn.dummyjson.com/product-images/tops/gray-dress/2.webp",
+        "https://cdn.dummyjson.com/product-images/tops/gray-dress/3.webp",
+        "https://cdn.dummyjson.com/product-images/tops/gray-dress/4.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/tops/gray-dress/thumbnail.webp",
+      "categoryName": "Tops",
+      "seller": {
+        "id": 3,
+        "name": "Sunday Studio",
+        "handle": "sunday-studio",
+        "followers": 375,
+        "sales": 3980,
+        "description": "A sample seller profile in the Eventide clothing marketplace.",
+        "image": "https://cdn.dummyjson.com/product-images/tops/blue-frock/thumbnail.webp"
+      },
+      "creator": {
+        "id": 7,
+        "name": "Studio Eight",
+        "handle": "studio-eight",
+        "followers": 219,
+        "sales": 2435,
+        "description": "A sample seller profile in the Eventide clothing marketplace.",
+        "image": "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/thumbnail.webp"
+      },
+      "likes": 17,
+      "views": 638,
+      "expiresAt": null
+    },
+    {
+      "id": 166,
+      "title": "Tartan Dress",
+      "description": "The Tartan Dress features a classic tartan pattern, bringing a timeless and sophisticated touch to your wardrobe. Perfect for fall and winter, it adds a hint of traditional charm.",
+      "category": "tops",
+      "price": 39.99,
+      "discountPercentage": 12.95,
+      "rating": 4.05,
+      "stock": 73,
+      "tags": [
+        "clothing",
+        "dresses"
+      ],
+      "sku": "TOP-BRD-TAR-166",
+      "weight": 8,
+      "dimensions": {
+        "width": 23.14,
+        "height": 12.44,
+        "depth": 12.67
+      },
+      "warrantyInformation": "1 month warranty",
+      "shippingInformation": "Ships overnight",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Highly recommended!",
+          "date": "2025-04-30T09:41:02.054Z",
+          "reviewerName": "Mason Pearson",
+          "reviewerEmail": "mason.pearson@x.dummyjson.com"
+        },
+        {
+          "rating": 3,
+          "comment": "Not as described!",
+          "date": "2025-04-30T09:41:02.054Z",
+          "reviewerName": "Luke Cooper",
+          "reviewerEmail": "luke.cooper@x.dummyjson.com"
+        },
+        {
+          "rating": 4,
+          "comment": "Excellent quality!",
+          "date": "2025-04-30T09:41:02.054Z",
+          "reviewerName": "William Lopez",
+          "reviewerEmail": "william.lopez@x.dummyjson.com"
+        }
+      ],
+      "returnPolicy": "No return policy",
+      "minimumOrderQuantity": 1,
+      "meta": {
+        "createdAt": "2024-09-08T05:01:39.851Z",
+        "updatedAt": "2025-04-22T11:26:24.192Z",
+        "barcode": "3383823083995",
+        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://cdn.dummyjson.com/product-images/tops/tartan-dress/1.webp",
+        "https://cdn.dummyjson.com/product-images/tops/tartan-dress/2.webp",
+        "https://cdn.dummyjson.com/product-images/tops/tartan-dress/3.webp",
+        "https://cdn.dummyjson.com/product-images/tops/tartan-dress/4.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/tops/tartan-dress/thumbnail.webp",
+      "categoryName": "Tops",
+      "seller": {
+        "id": 3,
+        "name": "Sunday Studio",
+        "handle": "sunday-studio",
+        "followers": 375,
+        "sales": 3980,
+        "description": "A sample seller profile in the Eventide clothing marketplace.",
+        "image": "https://cdn.dummyjson.com/product-images/tops/blue-frock/thumbnail.webp"
+      },
+      "creator": {
+        "id": 7,
+        "name": "Studio Eight",
+        "handle": "studio-eight",
+        "followers": 219,
+        "sales": 2435,
+        "description": "A sample seller profile in the Eventide clothing marketplace.",
+        "image": "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/thumbnail.webp"
+      },
+      "likes": 17,
+      "views": 1082,
+      "expiresAt": null
+    }
+  ]
+}

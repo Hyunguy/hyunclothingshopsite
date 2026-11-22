@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "Hyun Archive",
+    "handle": "hyun-archive",
+    "followers": 632,
+    "sales": 4820,
+    "description": "A sample seller profile in the Eventide clothing marketplace.",
+    "image": "https://cdn.dummyjson.com/product-images/mens-shirts/blue-&-black-check-shirt/thumbnail.webp"
+  },
+  {
+    "id": 2,
+    "name": "Common Room",
+    "handle": "common-room",
+    "followers": 481,
+    "sales": 4355,
+    "description": "A sample seller profile in the Eventide clothing marketplace.",
+    "image": "https://cdn.dummyjson.com/product-images/womens-dresses/black-women's-gown/thumbnail.webp"
+  },
+  {
+    "id": 3,
+    "name": "Sunday Studio",
+    "handle": "sunday-studio",
+    "followers": 375,
+    "sales": 3980,
+    "description": "A sample seller profile in the Eventide clothing marketplace.",
+    "image": "https://cdn.dummyjson.com/product-images/tops/blue-frock/thumbnail.webp"
+  },
+  {
+    "id": 4,
+    "name": "North Supply",
+    "handle": "north-supply",
+    "followers": 291,
+    "sales": 3510,
+    "description": "A sample seller profile in the Eventide clothing marketplace.",
+    "image": "https://cdn.dummyjson.com/product-images/mens-shoes/nike-air-jordan-1-red-and-black/thumbnail.webp"
+  },
+  {
+    "id": 5,
+    "name": "Everyday Goods",
+    "handle": "everyday-goods",
+    "followers": 260,
+    "sales": 3125,
+    "description": "A sample seller profile in the Eventide clothing marketplace.",
+    "image": "https://cdn.dummyjson.com/product-images/womens-shoes/black-&-brown-slipper/thumbnail.webp"
+  },
+  {
+    "id": 6,
+    "name": "The Wardrobe",
+    "handle": "the-wardrobe",
+    "followers": 244,
+    "sales": 2880,
+    "description": "A sample seller profile in the Eventide clothing marketplace.",
+    "image": "https://cdn.dummyjson.com/product-images/womens-bags/blue-women's-handbag/thumbnail.webp"
+  },
+  {
+    "id": 7,
+    "name": "Studio Eight",
+    "handle": "studio-eight",
+    "followers": 219,
+    "sales": 2435,
+    "description": "A sample seller profile in the Eventide clothing marketplace.",
+    "image": "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/thumbnail.webp"
+  },
+  {
+    "id": 8,
+    "name": "Second Season",
+    "handle": "second-season",
+    "followers": 198,
+    "sales": 2195,
+    "description": "A sample seller profile in the Eventide clothing marketplace.",
+    "image": "https://cdn.dummyjson.com/product-images/womens-dresses/corset-leather-with-skirt/thumbnail.webp"
+  },
+  {
+    "id": 9,
+    "name": "Good Company",
+    "handle": "good-company",
+    "followers": 154,
+    "sales": 1830,
+    "description": "A sample seller profile in the Eventide clothing marketplace.",
+    "image": "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/thumbnail.webp"
+  },
+  {
+    "id": 10,
+    "name": "Field Store",
+    "handle": "field-store",
+    "followers": 120,
+    "sales": 1525,
+    "description": "A sample seller profile in the Eventide clothing marketplace.",
+    "image": "https://cdn.dummyjson.com/product-images/mens-shoes/nike-baseball-cleats/thumbnail.webp"
+  },
+  {
+    "id": 11,
+    "name": "Neighbourhood",
+    "handle": "neighbourhood",
+    "followers": 96,
+    "sales": 1195,
+    "description": "A sample seller profile in the Eventide clothing marketplace.",
+    "image": "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/thumbnail.webp"
+  },
+  {
+    "id": 12,
+    "name": "Off Hours",
+    "handle": "off-hours",
+    "followers": 73,
+    "sales": 980,
+    "description": "A sample seller profile in the Eventide clothing marketplace.",
+    "image": "https://cdn.dummyjson.com/product-images/womens-bags/heshe-women's-leather-bag/thumbnail.webp"
+  }
+]
