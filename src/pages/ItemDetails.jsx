@@ -1,65 +1,94 @@
-import { useParams, Link } from "react-router-dom";
-import { Heart, Eye } from "lucide-react";
-import { useResource } from "../useResource";
-import { ProductDetail } from "../components";
-import { Countdown, SellerLink, Skeletons, Failure } from "../ui/MarketplaceUI";
+import React, { useEffect } from "react";
+import EthImage from "../images/ethereum.svg";
+import { Link } from "react-router-dom";
+import AuthorImage from "../images/author_thumbnail.jpg";
+import nftImage from "../images/nftImage.jpg";
 
-export default function ItemDetails({ saved, toggleSave, add }) {
-  const { id } = useParams();
-  const state = useResource("item-details/" + id);
-  if (state.error) return <Failure {...state} />;
-  if (state.loading)
-    return (
-      <>
-        <div className="page-heading">
-          <h1>Product details</h1>
-        </div>
-        <Skeletons count={2} />
-      </>
-    );
-  const item = state.data;
+const ItemDetails = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <>
-      <div className="detail-breadcrumb">
-        <Link to="/explore">All clothing</Link>
-        <span>/</span>
-        <Link to={"/collection/" + item.category}>{item.categoryName}</Link>
+    <div id="wrapper">
+      <div className="no-bottom no-top" id="content">
+        <div id="top"></div>
+        <section aria-label="section" className="mt90 sm-mt-0">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-6 text-center">
+                <img
+                  src={nftImage}
+                  className="img-fluid img-rounded mb-sm-30 nft-image"
+                  alt=""
+                />
+              </div>
+              <div className="col-md-6">
+                <div className="item_info">
+                  <h2>Rainbow Style #194</h2>
+
+                  <div className="item_info_counts">
+                    <div className="item_info_views">
+                      <i className="fa fa-eye"></i>
+                      100
+                    </div>
+                    <div className="item_info_like">
+                      <i className="fa fa-heart"></i>
+                      74
+                    </div>
+                  </div>
+                  <p>
+                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+                    illo inventore veritatis et quasi architecto beatae vitae
+                    dicta sunt explicabo.
+                  </p>
+                  <div className="d-flex flex-row">
+                    <div className="mr40">
+                      <h6>Owner</h6>
+                      <div className="item_author">
+                        <div className="author_list_pp">
+                          <Link to="/author">
+                            <img className="lazy" src={AuthorImage} alt="" />
+                            <i className="fa fa-check"></i>
+                          </Link>
+                        </div>
+                        <div className="author_list_info">
+                          <Link to="/author">Monica Lucas</Link>
+                        </div>
+                      </div>
+                    </div>
+                    <div></div>
+                  </div>
+                  <div className="de_tab tab_simple">
+                    <div className="de_tab_content">
+                      <h6>Creator</h6>
+                      <div className="item_author">
+                        <div className="author_list_pp">
+                          <Link to="/author">
+                            <img className="lazy" src={AuthorImage} alt="" />
+                            <i className="fa fa-check"></i>
+                          </Link>
+                        </div>
+                        <div className="author_list_info">
+                          <Link to="/author">Monica Lucas</Link>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="spacer-40"></div>
+                    <h6>Price</h6>
+                    <div className="nft-item-price">
+                      <img src={EthImage} alt="" />
+                      <span>1.85</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-      <section className="item-page" data-aos="fade-in">
-        <ProductDetail
-          key={item.id}
-          product={item}
-          add={add}
-          saved={saved.includes(item.id)}
-          save={() => toggleSave(item.id)}
-        />
-        <div className="item-metadata">
-          <div className="item-people">
-            <div>
-              <h3>Seller</h3>
-              <SellerLink seller={item.seller} />
-            </div>
-            <div>
-              <h3>Creator</h3>
-              <SellerLink seller={item.creator} />
-            </div>
-          </div>
-          <div className="item-stats">
-            <span>
-              <Eye size={15} />
-              {item.views} views
-            </span>
-            <span>
-              <Heart size={15} />
-              {item.likes + Number(saved.includes(item.id))} likes
-            </span>
-            <Countdown expiresAt={item.expiresAt} />
-          </div>
-          <p className="sample-note">
-            Sample marketplace activity. No purchases or bids are processed.
-          </p>
-        </div>
-      </section>
-    </>
+    </div>
   );
-}
+};
+
+export default ItemDetails;
