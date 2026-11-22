@@ -1,115 +1,69 @@
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { Copy } from "lucide-react";
-import { useResource } from "../useResource";
-import { ItemCard, Skeletons, Failure } from "../ui/MarketplaceUI";
+import React from "react";
+import AuthorBanner from "../images/author_banner.jpg";
+import AuthorItems from "../components/author/AuthorItems";
+import { Link } from "react-router-dom";
+import AuthorImage from "../images/author_thumbnail.jpg";
 
-export default function Author({ saved, toggleSave }) {
-  const { id } = useParams();
-  const state = useResource("author/" + id);
-  const [following, setFollowing] = useState(false);
-  const [copied, setCopied] = useState("");
-  const [tab, setTab] = useState("items");
-  useEffect(() => {
-    setFollowing(false);
-    setCopied("");
-    setTab("items");
-  }, [id]);
-  if (state.error) return <Failure {...state} />;
-  if (state.loading)
-    return (
-      <>
-        <div className="profile-loading skeleton">
-          <p />
-          <span />
-        </div>
-        <Skeletons />
-      </>
-    );
-  const seller = state.data;
-  async function copyHandle() {
-    try {
-      await navigator.clipboard.writeText("@" + seller.handle);
-      setCopied("Copied");
-    } catch {
-      setCopied("Copy unavailable. Select the handle to copy it.");
-    }
-  }
+const Author = () => {
   return (
-    <>
-      <section className="seller-profile" data-aos="fade-in">
-        <img src={seller.image} alt={seller.name} />
-        <div>
-          <span className="muted small">Seller profile</span>
-          <h1>{seller.name}</h1>
-          <div className="profile-handle">
-            <span>@{seller.handle}</span>
-            <button onClick={copyHandle} aria-label="Copy seller handle">
-              <Copy size={14} />
-            </button>
+    <div id="wrapper">
+      <div className="no-bottom no-top" id="content">
+        <div id="top"></div>
+
+        <section
+          id="profile_banner"
+          aria-label="section"
+          className="text-light"
+          data-bgimage="url(images/author_banner.jpg) top"
+          style={{ background: `url(${AuthorBanner}) top` }}
+        ></section>
+
+        <section aria-label="section">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="d_profile de-flex">
+                  <div className="de-flex-col">
+                    <div className="profile_avatar">
+                      <img src={AuthorImage} alt="" />
+
+                      <i className="fa fa-check"></i>
+                      <div className="profile_name">
+                        <h4>
+                          Monica Lucas
+                          <span className="profile_username">@monicaaaa</span>
+                          <span id="wallet" className="profile_wallet">
+                            UDHUHWudhwd78wdt7edb32uidbwyuidhg7wUHIFUHWewiqdj87dy7
+                          </span>
+                          <button id="btn_copy" title="Copy Text">
+                            Copy
+                          </button>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="profile_follow de-flex">
+                    <div className="de-flex-col">
+                      <div className="profile_follower">573 followers</div>
+                      <Link to="#" className="btn-main">
+                        Follow
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-md-12">
+                <div className="de_tab tab_simple">
+                  <AuthorItems />
+                </div>
+              </div>
+            </div>
           </div>
-          {copied && (
-            <span role="status" className="small">
-              {copied}
-            </span>
-          )}
-          <p>{seller.description}</p>
-        </div>
-        <div className="follow-box">
-          <p aria-live="polite">
-            {seller.followers + Number(following)} followers
-          </p>
-          <button
-            className="secondary"
-            aria-pressed={following}
-            onClick={() => setFollowing(!following)}
-          >
-            {following ? "Unfollow" : "Follow"}
-          </button>
-        </div>
-      </section>
-      <div
-        className="profile-tabs"
-        role="tablist"
-        aria-label="Seller inventory"
-      >
-        <button
-          id="listed-tab"
-          role="tab"
-          aria-selected={tab === "items"}
-          aria-controls="seller-items"
-          onClick={() => setTab("items")}
-        >
-          For sale ({seller.items.length})
-        </button>
-        <button
-          id="created-tab"
-          role="tab"
-          aria-selected={tab === "createdItems"}
-          aria-controls="seller-items"
-          onClick={() => setTab("createdItems")}
-        >
-          Created ({seller.createdItems.length})
-        </button>
+        </section>
       </div>
-      <div
-        id="seller-items"
-        role="tabpanel"
-        aria-labelledby={tab === "items" ? "listed-tab" : "created-tab"}
-        className="product-grid explore-grid"
-      >
-        {seller[tab].map((item) => (
-          <ItemCard
-            key={item.id}
-            item={item}
-            saved={saved}
-            toggleSave={toggleSave}
-          />
-        ))}
-      </div>
-      <p className="sample-note">
-        Sample profile. Following changes this page only.
-      </p>
-    </>
+    </div>
   );
-}
+};
+
+export default Author;
