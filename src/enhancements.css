@@ -1,8 +1,8 @@
 .nft-carousel {
-  margin: 0 -12px;
+  margin: 0 -5px;
 }
 .nft-carousel .slick-slide > div {
-  padding: 0 12px;
+  padding: 0 5px;
 }
 .nft-carousel .slick-track {
   display: flex;
@@ -89,3 +89,5 @@ select:focus-visible {
     transition: none !important;
   }
 }
+
+.nft_coll .nft_wrap { height: auto; }
