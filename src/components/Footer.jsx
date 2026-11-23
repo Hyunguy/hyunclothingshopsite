@@ -125,7 +125,10 @@ const Footer = () => {
                 Signup for our newsletter to get the latest news in your inbox.
               </p>
               <form
-                action="blank.php"
+                onSubmit={(event) => {
+                  event.preventDefault();
+                  alert("Newsletter signup is not available in this demo.");
+                }}
                 className="row form-dark"
                 id="form_subscribe"
                 method="post"

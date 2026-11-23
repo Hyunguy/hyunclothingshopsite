@@ -1,9 +1,9 @@
 import React from "react";
 import Logo from "../images/Ultraverse.png";
-import { Link } from "react-router-dom";
-
+import { Link, useNavigate } from "react-router-dom";
 
 const Nav = () => {
+  const navigate = useNavigate();
   const openNav = () => {
     document.body.classList.add("menu__open");
   };
@@ -22,18 +22,34 @@ const Nav = () => {
                 <div className="de-flex-col">
                   <div id="logo">
                     <Link to="/">
-                      <img alt="" className="logo-2" src={Logo} />
+                      <img
+                        alt="Ultraverse home"
+                        className="logo-2"
+                        src={Logo}
+                      />
                     </Link>
                   </div>
                 </div>
                 <div className="de-flex-col">
-                  <input
-                    id="quick_search"
-                    className="xs-hide"
-                    name="quick_search"
-                    placeholder="search item here..."
-                    type="text"
-                  />
+                  <form
+                    id="quick-search-form"
+                    onSubmit={(event) => {
+                      event.preventDefault();
+                      const query = new FormData(event.currentTarget).get(
+                        "quick_search",
+                      );
+                      navigate("/explore?search=" + encodeURIComponent(query));
+                    }}
+                  >
+                    <input
+                      id="quick_search"
+                      className="xs-hide"
+                      name="quick_search"
+                      placeholder="search item here..."
+                      aria-label="Search NFTs"
+                      type="text"
+                    />
+                  </form>
                 </div>
               </div>
               <div className="de-flex-col header-col-mid">
@@ -62,7 +78,12 @@ const Nav = () => {
                 </ul>
 
                 <div className="menu_side_area">
-                  <span onClick={() => openNav()} id="menu-btn"></span>
+                  <button
+                    type="button"
+                    aria-label="Open menu"
+                    onClick={() => openNav()}
+                    id="menu-btn"
+                  ></button>
                 </div>
               </div>
             </div>
@@ -82,7 +103,7 @@ const Nav = () => {
           </Link>
         </li>
         <li className="close__button">
-          <button onClick={() => closeNav()}>
+          <button aria-label="Close menu" onClick={() => closeNav()}>
             <span aria-hidden="true">×</span>
           </button>
         </li>
@@ -92,4 +113,3 @@ const Nav = () => {
 };
 
 export default Nav;
-
