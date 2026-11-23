@@ -1,6 +1,6 @@
-import {useEffect, useState} from 'react';
-import {remainingTime} from '../../countdown';
-export default function Countdown({expiryDate}) {
+import { useEffect, useState } from "react";
+import { remainingTime } from "../../countdown";
+export default function Countdown({ expiryDate }) {
   const [now, setNow] = useState(Date.now);
   useEffect(() => {
     if (!Number.isFinite(expiryDate)) return;
@@ -9,5 +9,9 @@ export default function Countdown({expiryDate}) {
   }, [expiryDate]);
   const time = remainingTime(expiryDate, now);
   if (!time) return null;
-  return <div className="de_countdown" aria-label="Time remaining">{time.hours}h {time.minutes}m {time.seconds}s</div>;
+  return (
+    <div className="de_countdown" aria-label="Time remaining">
+      {time.hours}h {time.minutes}m {time.seconds}s
+    </div>
+  );
 }

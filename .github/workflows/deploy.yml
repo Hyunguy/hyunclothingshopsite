@@ -1,4 +1,4 @@
-name: Deploy React storefront to GitHub Pages
+name: Deploy Ultraverse to GitHub Pages
 on:
   push:
     branches: [main]
